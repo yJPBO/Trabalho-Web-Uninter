@@ -15,7 +15,7 @@ html, body {
     flex-direction: column;
 }
 
-/* CABEÇALHO + MENU */
+/* CABEÇALHO + MENU DE NAVEGACAO*/
 header {
     background-color: #2C3E50;
     color: #f5deb3;
@@ -52,27 +52,106 @@ nav li:hover{
 }
 
 
-/* CONTEUDO PRINCIPAL */
-
-#principal {
-    border-radius: 20px;
-    margin: 12px auto;
-    padding: 20px 40px;
+/* CONTAINER PRINCIPAL GENERICO */
+.principal {
+    border-radius: 15px;
+    margin: 1em auto;
+    padding: 2em;
     display: block;  
     width: 55em;
-    height: 40em;
+    height: auto;
     background-color: #D5DBDB;
     color: #2C3E50;
     flex: 1;
 }
 
+.container {
+    margin: 0px 0px 12px 0px;
+    border: 1px solid black;
+}
+
+/* CONTEUDO PRINCIPAL (SOBRE MIM)*/
+.avatar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.avatar img {
+    display: inline;
+    width: 15em;
+    margin-right: 12px;
+}
+
+#intro {
+    flex: 1;
+    text-align: center;
+}
+
+.sobre-mim p {
+    font-size: large;
+    text-indent: 4em;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.avatar p{
+    font-size: large;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+#principal-sobre-mim {
+    padding-top: 5em;
+}
+
+
+/* FORMULARIO (PAGINA DE CONTATO)*/
+form {
+    box-sizing: border-box;
+    padding: 4px;
+    font-size: 20px;
+    width: 100%;
+}
+
+form h2 {
+    box-sizing: border-box;
+    margin: 10px auto 50px auto;
+    text-align: center;
+    width: 100%;
+}
+
+form input {
+    box-sizing: border-box;
+    margin: 2px auto 12px auto;
+    padding: 4px 8px;
+    width: 100%;
+    height: 1.5em;
+    font-size: large;
+}
+
+form textarea {
+    box-sizing: border-box;
+    margin: 2px 1px 12px 1px;
+    padding: 4px 8px;
+    width: 100%;
+    height: 6em;
+    resize: none;
+    font-size: large;
+
+}
+
+form button {
+    box-sizing: border-box;
+    width: 30%;
+    height: 2em;
+    font-size: large;
+    color: #2C3E50;
+}
+
+/* RODAPÉ */
 footer {
     background: #2C3E50;
     color: #f5deb3;
     text-align: center;
     padding: 10px;
-}
-
-.container {
-    border: 1px solid black;
 }
