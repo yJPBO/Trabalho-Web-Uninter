@@ -67,7 +67,7 @@ nav li:hover{
 
 .container {
     margin: 0px 0px 12px 0px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /* CONTEUDO PRINCIPAL (SOBRE MIM)*/
@@ -102,6 +102,75 @@ nav li:hover{
 
 #principal-sobre-mim {
     padding-top: 5em;
+}
+
+
+/* CONTEUDO PRINCIPAL (FORMACAO) */
+.formacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & h1 {
+        text-align: center;
+    }
+
+    & li {
+        font-size: large;
+
+    }
+}
+
+.cursos, .skills {
+    margin-bottom: 4em;
+    width: 80%;
+    & h1 {
+        background-color: #34495E;
+        color: #f5deb3;
+        border-radius: 10px;
+        margin-bottom: 3rem;
+    }
+
+    & li {
+        padding-left: 4em;
+        padding-right: 4em;
+        list-style-position: inside;
+    }
+}
+
+
+/* CONTEUDO PRINCIPAL (PORTFOLIO) */
+.portfolio {
+    display: flex;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+
+    & ul {
+        list-style: none;
+    }
+
+    & li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #34495E;
+        margin-bottom: 2em;
+        width: 30em;
+        height: 3em;
+        border-radius: 10px;
+    }
+    
+    & li a {
+        color: #f5deb3;
+        text-decoration: none;
+    }
+
+    & li:hover {
+        background-color: #2C3E50;
+        font-weight: bold;
+    }
 }
 
 
