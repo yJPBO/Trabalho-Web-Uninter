@@ -122,7 +122,7 @@ nav li:hover{
     }
 }
 
-.cursos, .skills {
+.cursos, .skills, .idiomas {
     margin-bottom: 4em;
     width: 80%;
     & h1 {
