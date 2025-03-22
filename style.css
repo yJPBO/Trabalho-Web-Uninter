@@ -28,23 +28,27 @@ header {
 nav {
     background-color: #34495E;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 3em;
 }
 
 nav ul {
-    list-style: none;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
 }
 
 nav li {
     padding: 8px;
-    margin: 4px;
-    float: left;
+    margin: 0px 10px;
 }
 
 nav li a {
-    color: #f5deb3;
     text-decoration: none;
+    color: #f5deb3;
 }
 
 nav li:hover{
@@ -163,6 +167,11 @@ nav li:hover{
     }
     
     & li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        width: 100%;
+        height: 100%;
         color: #f5deb3;
         text-decoration: none;
     }
